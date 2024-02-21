@@ -12,9 +12,10 @@ public class ArrayPlayground {
 		outputArr();
 
 		numArr[0] = 100;
+		numArr[3] = 101;
 
 		System.err.println("Elemente:" + numArr.length);
-		// numArr[3] = 101;
+		
 		numArr[numArr.length-1] = 101;
 
 		outputArr();
