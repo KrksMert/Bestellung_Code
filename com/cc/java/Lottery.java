@@ -18,6 +18,7 @@ public class Lottery {
 		int randomNumber;
 		boolean isRepeated;
 		
+
 		for (int indexDrawn = 0; indexDrawn < slots; indexDrawn++) // 6x
 		{
 			do {
@@ -45,14 +46,18 @@ public class Lottery {
 		
 		Arrays.sort(lotteryArray);
 		
-		System.out.println("The result of the lottery:");
+		System.out.println("");
+		System.out.println("Die Ergebnisse der Lottozahlen:");
 		
 		for (int i = 0; i<slots; i++) 
 		{
 			System.out.print(lotteryArray[i] + " ");
+			
 		}
-
 		
+		// Generiere und füge die Superzahl hinzu
+        int superzahl = rand.nextInt((max - min) + 1) + min;
+        System.out.println("\nDie Superzahl ist: " + superzahl);
 		
 	}
 
